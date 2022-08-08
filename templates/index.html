@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .Title }}</title>
+    <link type="text/css" rel="stylesheet" href="/static/css/tailwind.css">
+    <link  type="text/css" rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+<div>
+    {{ template "Header" .}}
+    <h1>Golang Basics</h1>
+    <h3>An introduction to Go programming Language</h3>
+    <h4>Logged In As: {{.AuthUser}}</h4>
+</div>
+</body>
+</html>

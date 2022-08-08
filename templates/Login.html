@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/static/css/tailwind.css">
+    <link  type="text/css" rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+    <div class="flex h-screen p-2 w-screen justify-center align-middle text-center bg-gray-800 xs:p-0 ">
+        <form class="bg-white p-10 lg:py-16 lg:px-10  w-full sm:w-10/12 md:w-1/2 lg:w-1/3 m-auto  shadow-sm"  method="post">
+            <h2 class="text-center text-black py-4" >Sign-In</h2>
+            <p class="text-red-500">{{.Message.Value}}</p>
+            <div class="p-2">
+                <input name="email" class="border p-2 w-full  " type="email" placeholder="Email Address" >
+            </div>
+            <div class="p-2">
+                <input name="password" class="border  p-2 w-full " type="password" placeholder="Password" >
+            </div>
+            <div>
+                <button class="bg-gray-900 p-2 text-black text-white rounded focus:outline-none focus:outline-none " type="submit">SignIn</button>
+            </div>
+
+            <div class="p-2  ">
+                <p class="text-black text-gray-900">Don't have an account? <a class="outline-none" href="/sign-up" > Create Account</a></p>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
